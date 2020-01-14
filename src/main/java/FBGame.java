@@ -5,15 +5,16 @@
  */
 public class FBGame {
     public String play(int i) {
+        String rslt = null;
         if (0 == i % 3 && 0 == i % 5) {
-            return "fizzbuzz";
+            rslt = "fizzbuzz";
+        } else if (0 == i % 3) {
+            rslt = "fizz";
+        } else if (0 == i % 5) {
+            rslt = "buzz";
+        } else {
+            rslt = String.valueOf(i);
         }
-        if (0 == i % 3) {
-            return "fizz";
-        }
-        if (0 == i % 5) {
-            return "buzz";
-        }
-        return String.valueOf(i);
+        return rslt;
     }
 }
