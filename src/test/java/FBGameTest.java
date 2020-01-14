@@ -8,11 +8,11 @@ import org.junit.Test;
  */
 public class FBGameTest {
     @Test
-    public void test(){
+    public void test() {
         FBGame fbGame = new FBGame();
-        Assert.assertEquals("fizz",fbGame.play(3));
-        Assert.assertEquals("buzz",fbGame.play(5));
-        Assert.assertEquals("fizzbuzz",fbGame.play(15));
-        Assert.assertEquals("4",fbGame.play(4));
+        Assert.assertEquals("fizz", fbGame.play(3));
+        Assert.assertEquals("buzz", fbGame.play(5));
+        Assert.assertEquals("fizzbuzz", fbGame.play(15));
+        Assert.assertEquals("4", fbGame.play(4));
     }
 }

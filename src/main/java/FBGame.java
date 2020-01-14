@@ -5,13 +5,13 @@
  */
 public class FBGame {
     public String play(int i) {
-        if(0==i%3&&0==i%5){
+        if (0 == i % 3 && 0 == i % 5) {
             return "fizzbuzz";
         }
-        if(0==i%3){
+        if (0 == i % 3) {
             return "fizz";
         }
-        if(0==i%5){
+        if (0 == i % 5) {
             return "buzz";
         }
         return String.valueOf(i);
